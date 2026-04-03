@@ -26,29 +26,13 @@
         <p class="animate" data-animate="animContent 0.3s 1s forwards">{{ t('situation.p3') }}</p>
       </div>
       <div class="img animate" data-animate="animContent 0.3s 1s forwards">
-        <iframe
-          class="google-map-embed"
-          title="Residence de Muses location map"
-          :src="googleMapLocationUrl"
-          style="width: 100%; height: 100%; border: 0; display: block;"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          allowfullscreen
-        ></iframe>
+        <img class="situation-map-image" :src="baseUrl + 'imgs/maps/map-1.svg'" alt="Residence de Muses location map" />
       </div>
     </section>
 
     <section class="two-columns width padding-bottom">
       <div class="img animate" data-animate="animContent 0.3s .8s forwards">
-        <iframe
-          class="google-map-embed"
-          title="Residence de Muses satellite map"
-          :src="googleMapSatelliteUrl"
-          style="width: 100%; height: 100%; border: 0; display: block;"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          allowfullscreen
-        ></iframe>
+        <img class="situation-map-image" :src="baseUrl + 'imgs/maps/map-2.svg'" alt="Residence de Muses satellite map" />
       </div>
       <div class="txt">
         <p class="animate" data-animate="animContent 0.3s .8s forwards">{{ t('situation.p4') }}</p>
@@ -57,7 +41,10 @@
       </div>
     </section>
 
-    <section class="fullImg" :style="{ backgroundImage: 'url(' + baseUrl + 'imgs/Coffrane.webp)' }"></section>
+    <section
+      class="fullImg"
+      :style="{ backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(' + baseUrl + 'imgs/Coffrane.webp)' }"
+    ></section>
   </main>
 </template>
 
@@ -68,12 +55,6 @@ const baseUrl = inject('baseUrl', '/')
 const { language, t } = useI18n()
 
 const mapLang = computed(() => (language.value === 'fr' ? 'fr' : 'de'))
-const googleMapLocationUrl = computed(
-  () => `https://www.google.com/maps?q=Herzogenbuchsee%2C%20Switzerland&z=13&output=embed&hl=${mapLang.value}`
-)
-const googleMapSatelliteUrl = computed(
-  () => `https://www.google.com/maps?q=Herzogenbuchsee%2C%20Switzerland&t=k&z=16&output=embed&hl=${mapLang.value}`
-)
 const googleMapsLinkUrl = computed(
   () => `https://www.google.com/maps/search/?api=1&query=Herzogenbuchsee%2C%20Switzerland&hl=${mapLang.value}`
 )
@@ -82,4 +63,3 @@ function changeImg(n) {
   if (typeof window !== 'undefined' && window.changeImg) window.changeImg(n)
 }
 </script>
-

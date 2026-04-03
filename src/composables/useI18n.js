@@ -61,8 +61,10 @@ const messages = {
       title: 'Galerie'
     },
     plans: {
+      apartment: 'Wohnung',
       rooms: 'Zimmer',
       area: 'Wohnflaeche',
+      terraceBalcony: 'Terrasse / Balkon',
       garden: 'Garten',
       priceWithoutParking: 'Preis ohne Parkplatz',
       status: 'Status',
@@ -74,7 +76,8 @@ const messages = {
       brochure: 'Broschuere herunterladen',
       statusValues: {
         available: 'Verfuegbar',
-        reserved: 'Reserviert'
+        reserved: 'Reserviert',
+        sold: 'Verkauft'
       }
     },
     downloads: {
@@ -171,8 +174,10 @@ const messages = {
       title: 'Galerie'
     },
     plans: {
+      apartment: 'Appartement',
       rooms: 'Pieces',
       area: 'Surf. hab.',
+      terraceBalcony: 'Terrasses / Balcons',
       garden: 'Jardin',
       priceWithoutParking: 'Prix hors parking',
       status: 'Statut',
@@ -184,7 +189,8 @@ const messages = {
       brochure: 'Telecharger la brochure',
       statusValues: {
         available: 'Disponible',
-        reserved: 'Reserve'
+        reserved: 'Reserve',
+        sold: 'Vendu'
       }
     },
     downloads: {
