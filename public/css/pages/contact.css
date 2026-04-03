@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  margin-bottom: 120px;
 }
 
 .page-contact .contact-container > div {
@@ -133,7 +134,7 @@
 .page-contact .contact-container > div .client-img {
   width: 130px;
   height: 55px;
-  margin: 0 auto 83px auto;
+  margin: 0 auto 36px auto;
 }
 
 .page-contact .contact-container > div .client-img img {
@@ -205,7 +206,7 @@
 @media only screen and (max-width: 1090px) {
   .page-contact .contact-container {
     padding: 0 0px 0px 100px;
-    margin-bottom: initial;
+    margin-bottom: 90px;
   }
 
   .page-contact .contact-container > div span {
@@ -231,6 +232,7 @@
     flex-direction: column;
     padding: 0;
     gap: 30px;
+    margin-bottom: 60px;
   }
 
   .page-contact .contact-container > div {

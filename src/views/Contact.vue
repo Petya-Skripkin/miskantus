@@ -38,36 +38,22 @@
         </form>
       </div>
       <div>
-        <h2 class="animate" data-animate="animTitle 0.3s .5s forwards">{{ t('contact.person') }}</h2>
         <div class="client-img animate" data-animate="animTitle 0.3s 1.2s forwards">
           <img :src="baseUrl + 'imgs/logos/logo-rewus-main.svg'" alt="" />
         </div>
         <div class="client">
-          <h3 class="animate" data-animate="animTitle 0.3s 1.2s forwards">Alen</h3>
           <div class="animate" data-animate="animTitle 0.3s 1.2s forwards">
             <img :src="baseUrl + 'imgs/icons/telephone.svg'" alt="" />
-            <a href="tel:+41795760405"><b>+41 79 576 04 05</b></a>
+            <a href="tel:+41799532730"><b>+41 79 953 27 30</b></a>
           </div>
           <div class="animate" data-animate="animTitle 0.3s 1.3s forwards">
             <img class="bigger" :src="baseUrl + 'imgs/icons/mail.svg'" alt="" />
-            <a href="mailto:info@rewus.ch"><b>info@rewus.ch</b></a>
+            <a href="mailto:info@esm-technologie.ch"><b>info@esm-technologie.ch</b></a>
           </div>
           <div class="animate" data-animate="animTitle 0.3s 1.4s forwards">
             <img :src="baseUrl + 'imgs/icons/pin.svg'" alt="" />
-            <p>Rewus GmbH<br />Britschenmattstrasse 29<br />3238 Gals</p>
+            <p>ESM Technologie GmbH<br />Kreuzweg 2<br />3238 Gals</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="partenaires" class="width partners-section">
-      <div class="partenaires-container">
-        <div>
-        </div>
-        <div>
-          <p class="partner-info">{{ t('contact.partnerAxaLine1') }}<br />{{ t('contact.partnerAxaLine2') }}</p>
-        </div>
-        <div>
         </div>
       </div>
     </section>
@@ -82,7 +68,7 @@ const baseUrl = inject('baseUrl', '/')
 const { t } = useI18n()
 
 // Vor dem Deployment durch die Zieladresse ersetzen.
-const CONTACT_RECIPIENT = 'info@rewus.ch'
+const CONTACT_RECIPIENT = 'info@esm-technologie.ch'
 
 const form = reactive({
   lastName: '',

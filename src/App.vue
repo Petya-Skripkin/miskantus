@@ -53,9 +53,9 @@
     <footer class="site-footer">
       <div class="width footer-inner">
         <div class="footer-details">
-          <div><p>Rewus GmbH <br />Britschenmattstrasse 29<br />3238 Gals</p></div>
-          <div><a href="https://www.lrm-services.ch" target="_blank"><img :src="baseUrl + 'imgs/logos/logo-rewus.svg'" alt="Rewus GmbH logo" /></a></div>
-          <div><p><a href="mailto:info@rewus.ch">info@rewus.ch</a><br /><a href="tel:+41795760405">+41 79 576 04 05</a></p></div>
+          <div><p>ESM Technologie GmbH <br />Kreuzweg 2<br />3238 Gals</p></div>
+          <div><a href="https://www.lrm-services.ch" target="_blank"><img :src="baseUrl + 'imgs/logos/logo-rewus.svg'" alt="ESM Technologie GmbH logo" /></a></div>
+          <div><p><a href="mailto:info@esm-technologie.ch">info@esm-technologie.ch</a><br /><a href="tel:+41799532730">+41 79 953 27 30</a></p></div>
         </div>
       </div>
     </footer>
